@@ -377,11 +377,12 @@
                     if (result.isConfirmed) {
                         let comp = new Component();
                         let response = await fetch(`actionDriver/${id}/${type}`, {
-                            method: 'POST',  // Ensure it's a POST request
+                            // Ensure it's a POST request
                             credentials: 'same-origin'
                         });
 
                         let { message, status } = await response.json();
+                        console.log(message,status)
 
                         if(status == 'success') {
                             comp.msg(

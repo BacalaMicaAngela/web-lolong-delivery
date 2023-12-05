@@ -51,9 +51,9 @@ Route::get('/driver', [AdminLinkController::class, 'driver'])->middleware('islog
 Route::post('manageDriver', [DriverContoller::class, 'manageDriver'])->name('manageDriver');
 Route::get('showDriver/{id}', [DriverContoller::class, 'showDriver'])->name('showDriver');
 Route::post('destroyDriver', [DriverContoller::class, 'destroyDriver'])->name('destroyDriver');
-Route::post('actionDriver/{id}/{type}', [DriverController::class, 'actionDriver'])->name('actionDriver');
-Route::post('removeDriver/{id}', [DriverController::class, 'removeDriver'])->name('removeDriver');
-Route::post('restoreDriver/{id}', [DriverController::class, 'restoreDriver'])->name('restoreDriver');
+Route::get('actionDriver/{id}/{type}', [DriverContoller::class, 'actionDriver'])->name('actionDriver');
+Route::post('removeDriver/{id}', [DriverContoller::class, 'removeDriver'])->name('removeDriver');
+Route::post('restoreDriver/{id}', [DriverContoller::class, 'restoreDriver'])->name('restoreDriver');
 
 // truck units
 Route::get('/truck', [AdminLinkController::class, 'truck'])->middleware('isloggedIn');

@@ -18,7 +18,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col">
-                    <span class="schedule-label">THRASHED USERS</span>
+                    <span class="schedule-label">TRASHED USERS</span>
                     <p class="module-description">Restore Users</p>
 
             </div>
