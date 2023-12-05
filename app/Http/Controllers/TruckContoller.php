@@ -15,14 +15,12 @@ class TruckContoller extends Controller
                 $obj->truck_name     = $request->brandname;
                 $obj->truck_plateno  = $request->plateno;
                 $obj->model          = $request->model;
-                $obj->chasisno       = $request->chassisno;
                 $msg = 'save';
             } else {
                 $obj = Trucks::find($request->id);
                 $obj->truck_name     = $request->brandname;
                 $obj->truck_plateno  = $request->plateno;
                 $obj->model          = $request->model;
-                $obj->chasisno       = $request->chassisno;
                 $msg = 'updated';
             }
 

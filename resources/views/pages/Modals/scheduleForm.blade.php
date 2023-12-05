@@ -66,13 +66,13 @@
 
                     <div>
                         <label for="text" class="block mb-1 text-gray-600 font-semibold">Recieve By</label>
-                        <input required type="text" id="reciveby" name="reciveby"
+                        <input type="text" id="reciveby" name="reciveby"
                             class="bg-indigo-50 px-2 py-2 outline-none rounded-md w-full" />
                     </div>
 
                     <div>
-                        <label for="text" class="block mb-1 text-gray-600 font-semibold">Recieve Date & Time</label>
-                        <input required type="datetime-local" id="recivedate" name="recivedate"
+                        <label for="text" class="block mb-1 text-gray-600 font-semibold">Receive Date & Time</label>
+                        <input type="datetime-local" id="recivedate" name="recivedate"
                             class="bg-indigo-50 px-2 py-2 outline-none rounded-md w-full" />
                     </div>
                     <div id="status-hide">

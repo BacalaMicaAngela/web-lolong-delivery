@@ -61,7 +61,7 @@
                                 <tr>
                                     <td>
                                         <center class="mt-3"><input class="form-check-input checkbox" type="checkbox"
-                                                value="{{ $fetchData->maintenace_id }}"></center>
+                                                value="{{ $fetchData->maintenance_id }}"></center>
                                     </td>
                                     <td>
                                         <p class="mt-3">{{ $fetchData->driver_name }}</p>
@@ -103,7 +103,7 @@
                                                 </button>
                                                 <ul class="dropdown-menu">
                                                     <li class="p-2">
-                                                        <button data-id="{{ $fetchData->maintenace_id }}"
+                                                        <button data-id="{{ $fetchData->maintenance_id }}"
                                                             class="btn-sm btn btn-outline-success editBtn w-full"><i
                                                                 class="fa-solid fa-pen mr-2"></i>Edit</button>
                                                     </li>

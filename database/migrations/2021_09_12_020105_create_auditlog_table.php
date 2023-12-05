@@ -17,6 +17,7 @@ class CreateAuditlogTable extends Migration
             $table->id();
             $table->string('avatar');
             $table->string('fname');
+            $table->string('userType');
             $table->string('logType');
             $table->integer('user_id');
             $table->date('create_date');

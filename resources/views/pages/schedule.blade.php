@@ -49,7 +49,7 @@
                                 </th>
                                 <th>Business Name</th>
                                 <th>Delivery Address</th>
-                                <th>Contact Perosn</th>
+                                <th>Contact Person</th>
                                 <th>Contact No</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -262,7 +262,7 @@
 
                 let comp = new Component(),
                 response = await fetch("{{ route('manageSchedule') }}", {
-                    method: 'POST',
+                    method: "POST",
                     credentials: "same-origin",
                     headers: {
                         "X-CSRF-Token": document.querySelector('input[name=_token]').value
