@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $table='users';
     protected $primaryKey = 'user_id';

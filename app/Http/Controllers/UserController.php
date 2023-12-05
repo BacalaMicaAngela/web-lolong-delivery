@@ -236,8 +236,7 @@ class UserController extends Controller
     {
         try {
             // Restore soft-deleted user
-            User::withTrashed()->where('id', $id)->restore();
-
+            $user = User::withTrashed()->where('user_id', $id)->restore();
             echo json_encode(array(
                 "message" => 'User restored successfully.',
                 "status"  => "success"
