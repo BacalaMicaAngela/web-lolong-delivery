@@ -19,6 +19,8 @@ class DriverContoller extends Controller
                 $obj->driver_phone   = $request->mobile;
                 $obj->driver_address = $request->address;
                 $obj->license_no     = $request->licenseno;
+                $obj->status         = 0; // Add this line
+
                
 
                 $msg = 'save';

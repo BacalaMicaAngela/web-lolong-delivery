@@ -12,6 +12,6 @@ class Trucks extends Model
     protected $table      = 'tbl_truck_units';
     protected $primaryKey = 'truck_id';
     Protected $fillable   = [
-        'truck_name', 'truck_plateno', 'model', 'chasisno'
+        'truck_name', 'truck_plateno', 'model'
     ];
 }
